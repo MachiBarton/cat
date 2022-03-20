@@ -16,8 +16,8 @@ fs.readdir(filePath, 'utf8', function (err,data) {
         console.log(item,item.includes('index')>=0);
 		fs.readFile(`./${item}`,'utf8',function(err,files){
 			// console.log(files)
-			var result = files.replace(/<\/html>/g, ` <style>             .middlePanel{
-                display: none;
+			var result = files.replace(/<\/html>/g, ` <style>             .bannerTable{
+                height: auto;
                             }
                           
                         </style></html>`);
